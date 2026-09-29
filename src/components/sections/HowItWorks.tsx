@@ -3,8 +3,8 @@
 import React from "react";
 import { Language } from "@/types/trip";
 import { MessageSquareText, CheckSquare, UserCheck, Utensils } from "lucide-react";
-import { ScrollPopWrapper } from "@/components/illustrations/ScrollPopWrapper";
-import { InteractivePin } from "@/components/illustrations/InteractivePin";
+import { ScrollPopWrapper } from "@/components/ui/ScrollPopWrapper";
+import { InteractivePin } from "@/components/ui/InteractivePin";
 
 interface HowItWorksProps {
   lang: Language;

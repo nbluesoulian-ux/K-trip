@@ -73,16 +73,22 @@ npm run start
 ```
 K-trip/
 ├── public/
-│   ├── images/          # 주요 랜드마크 및 최적화 이미지
-│   └── videos/          # GSAP 스크러빙 전용 배경 비디오
+│   ├── images/          # 카테고리별 로컬 최적화 이미지
+│   │   ├── concierge/   # 1330 및 전담 매니저 안내 이미지
+│   │   ├── destinations/# 4대 거점 도시(서울/부산/제주/경주) 사진
+│   │   ├── guides/      # 6대 문제해결 가이드(입국/숙소/일정/교통/렌터카/배달)
+│   │   └── landmarks/   # N서울타워 등 주요 랜드마크 비주얼
+│   └── videos/          # GSAP 스크러빙 전용 배경 비디오 (hero-intro.mp4)
 ├── src/
 │   ├── app/             # Next.js App Router (layout.tsx, page.tsx, globals.css)
-│   ├── components/      # K-Trip 전용 UI 컴포넌트
-│   │   ├── home/        # Hero, VideoScrubbing, ProblemSolver, Guides, Concierge 등
-│   │   ├── illustrations/ # 인터랙티브 핀 및 팝업 애니메이션 래퍼
-│   │   └── ui/          # Button, Dialog 등 공통 프리미티브
-│   ├── data/            # 여행지, 실전 가이드북 정적 데이터
-│   ├── lib/             # 문제 매칭 엔진(problem-matcher), 유틸리티 함수
+│   ├── components/      # 역할별 모듈화 컴포넌트
+│   │   ├── hero/        # Hero 비디오 스크롤, 1:1 문제 해결사, 캔버스
+│   │   ├── layout/      # Header, Footer, MobileStickyBar, ScrollProgressRail
+│   │   ├── modals/      # 가이드, 컨시어지, 비자 체크, 도시 선택 다이얼로그
+│   │   ├── sections/    # 인기 토픽, 단계별 가이드, 취향 탐색, 진행 방식, 최종 CTA
+│   │   └── ui/          # Button, Dialog, InteractivePin, ScrollPopWrapper
+│   ├── data/            # 여행지, 실전 가이드북 정적 데이터 (로컬 이미지 연동)
+│   ├── lib/             # 문제 매칭 엔진(problem-matcher), 에셋 경로 헬퍼, 유틸리티
 │   └── types/           # 여행 관련 인터페이스 및 타입 정의
 ├── package.json
 └── README.md

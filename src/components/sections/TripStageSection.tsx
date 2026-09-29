@@ -3,8 +3,8 @@
 import React from "react";
 import { Language, HelpTopic } from "@/types/trip";
 import { Plane, Sparkles, CreditCard, Train } from "lucide-react";
-import { ScrollPopWrapper } from "@/components/illustrations/ScrollPopWrapper";
-import { InteractivePin } from "@/components/illustrations/InteractivePin";
+import { ScrollPopWrapper } from "@/components/ui/ScrollPopWrapper";
+import { InteractivePin } from "@/components/ui/InteractivePin";
 import { getAssetPath } from "@/lib/utils";
 
 interface TripStageSectionProps {
@@ -22,7 +22,7 @@ export const TripStageSection: React.FC<TripStageSectionProps> = ({
     {
       title: { en: "K-ETA & Entry Documents", ko: "입국 서류 및 비자 사전 확인" },
       time: "3 min guide",
-      image: "https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=700&q=80",
+      image: "/images/guides/entry.jpg",
       imageAlt: { en: "Seoul palace gate", ko: "서울 궁궐 정문" },
       topic: "entry" as HelpTopic,
       tag: "PRE-DEPARTURE",
@@ -34,7 +34,7 @@ export const TripStageSection: React.FC<TripStageSectionProps> = ({
     {
       title: { en: "Naver Map & Apps Setup", ko: "네이버지도 및 필수 앱 설치" },
       time: "4 min guide",
-      image: "https://images.unsplash.com/photo-1546874177-9e664107314e?auto=format&fit=crop&w=700&q=80",
+      image: "/images/destinations/seoul.jpg",
       imageAlt: { en: "Seoul city skyline", ko: "서울 도심 전경" },
       topic: "destination" as HelpTopic,
       tag: "NAVIGATION",
@@ -46,7 +46,7 @@ export const TripStageSection: React.FC<TripStageSectionProps> = ({
     {
       title: { en: "Airport Express & eSIM", ko: "공항철도 직통 & eSIM 예약" },
       time: "2 min guide",
-      image: "https://images.unsplash.com/photo-1548115184-bc6544d06a58?auto=format&fit=crop&w=700&q=80",
+      image: "/images/guides/stay.jpg",
       imageAlt: { en: "Hanok street", ko: "한옥마을 거리" },
       topic: "transit" as HelpTopic,
       tag: "CONNECTIVITY",
@@ -61,7 +61,7 @@ export const TripStageSection: React.FC<TripStageSectionProps> = ({
     {
       title: { en: "Subway Pass (T-Money vs Climate)", ko: "지하철 & 티머니 vs 기후동행카드" },
       time: "3 min guide",
-      image: "/images/n-seoul-tower.jpg",
+      image: "/images/guides/transport.jpg",
       imageAlt: { en: "Seoul subway landscape", ko: "서울 도심 대중교통 풍경" },
       topic: "transit" as HelpTopic,
       tag: "TRANSIT",
@@ -73,7 +73,7 @@ export const TripStageSection: React.FC<TripStageSectionProps> = ({
     {
       title: { en: "Foreign Card Kiosk Payment", ko: "무인 결제기 해외카드 오류 대처" },
       time: "2 min guide",
-      image: "https://images.unsplash.com/photo-1553163147-622ab57be1c7?auto=format&fit=crop&w=700&q=80",
+      image: "/images/guides/delivery.jpg",
       imageAlt: { en: "Korean food table", ko: "한국 음식 상차림" },
       topic: "delivery" as HelpTopic,
       tag: "PAYMENT",
@@ -85,7 +85,7 @@ export const TripStageSection: React.FC<TripStageSectionProps> = ({
     {
       title: { en: "Kakao T & Taxi Hailing", ko: "카카오택시 호출 및 주소 카드" },
       time: "3 min guide",
-      image: "https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=700&q=80",
+      image: "/images/guides/rental.jpg",
       imageAlt: { en: "Coastal road", ko: "해안 도로" },
       topic: "stay" as HelpTopic,
       tag: "TAXIS",

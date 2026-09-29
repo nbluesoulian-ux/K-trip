@@ -12,7 +12,7 @@ import { Language, HelpTopic } from "@/types/trip";
 import { FastForward, ChevronDown } from "lucide-react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { HeroProblemSolver, HeroProblemSolverRef } from "@/components/home/HeroProblemSolver";
+import { HeroProblemSolver, HeroProblemSolverRef } from "@/components/hero/HeroProblemSolver";
 import { getAssetPath } from "@/lib/utils";
 
 if (typeof window !== "undefined") {
@@ -405,7 +405,7 @@ export const HeroScrollExperience = forwardRef<HeroProblemSolverRef, HeroScrollE
             {/* Main Video (Full Bleed Cover) */}
             <video
               ref={videoRef}
-              src={getAssetPath("/videos/Woman_planning_trip_to_Korea_20260929102431.mp4")}
+              src={getAssetPath("/videos/hero-intro.mp4")}
               muted
               playsInline
               preload="auto"

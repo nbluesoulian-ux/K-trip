@@ -4,8 +4,9 @@ import React from "react";
 import { Language } from "@/types/trip";
 import { Button } from "@/components/ui/button";
 import { PhoneCall, Calendar, Utensils, Navigation, ArrowRight, HeartHandshake, Phone } from "lucide-react";
-import { ScrollPopWrapper } from "@/components/illustrations/ScrollPopWrapper";
-import { InteractivePin } from "@/components/illustrations/InteractivePin";
+import { ScrollPopWrapper } from "@/components/ui/ScrollPopWrapper";
+import { InteractivePin } from "@/components/ui/InteractivePin";
+import { getAssetPath } from "@/lib/utils";
 
 interface LocalConciergeProps {
   lang: Language;
@@ -45,7 +46,7 @@ export const LocalConcierge: React.FC<LocalConciergeProps> = ({
               <div className="lg:col-span-5 relative">
                 <div className="relative rounded-[32px] overflow-hidden border-2 border-slate-800 shadow-md aspect-[4/5] bg-slate-100 group">
                   <img
-                    src="https://images.unsplash.com/photo-1538485399081-7191377e8241?auto=format&fit=crop&w=800&q=80"
+                    src={getAssetPath("/images/concierge/manager.jpg")}
                     alt={lang === "en" ? "Traveler in a lively Seoul street" : "활기찬 서울 종로 골목의 여행자"}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     loading="lazy"

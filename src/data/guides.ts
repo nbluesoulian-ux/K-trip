@@ -12,7 +12,7 @@ export const SOLUTION_GUIDES: SolutionGuide[] = [
       en: "Visa, K-ETA and arrival steps",
       ko: "비자 면제 여부, K-ETA 및 입국 심사 절차",
     },
-    image: "https://images.unsplash.com/photo-1517154421773-0529f29ea451?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/guides/entry.jpg",
     imageAlt: {
       en: "Gyeongbokgung Palace entrance gate in Seoul",
       ko: "서울 경복궁 광화문 전경",
@@ -79,7 +79,7 @@ export const SOLUTION_GUIDES: SolutionGuide[] = [
       en: "Find the right area for your trip",
       ko: "내 여행 스타일과 동선에 딱 맞는 지역 찾기",
     },
-    image: "https://images.unsplash.com/photo-1548115184-bc6544d06a58?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/guides/stay.jpg",
     imageAlt: {
       en: "Traditional Hanok village alleyway in Seoul",
       ko: "고즈넉한 전주 및 북촌 한옥마을 골목길",
@@ -134,7 +134,7 @@ export const SOLUTION_GUIDES: SolutionGuide[] = [
       en: "Build a trip that fits your pace",
       ko: "무리한 이동 없이 여유롭고 알찬 다도시 코스",
     },
-    image: "https://images.unsplash.com/photo-1583037189850-1921ae7c6c22?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/guides/destination.jpg",
     imageAlt: {
       en: "Busan Haeundae coastal skyline",
       ko: "부산 해운대 해안 스카이라인",
@@ -196,7 +196,7 @@ export const SOLUTION_GUIDES: SolutionGuide[] = [
       en: "Cards, routes and transfers",
       ko: "기후동행카드, 티머니, 환승 및 네이버지도 활용법",
     },
-    image: "/images/n-seoul-tower.jpg",
+    image: "/images/guides/transport.jpg",
     imageAlt: {
       en: "N Seoul Tower sunset panorama overlooking Seoul metro area",
       ko: "서울 도심 대중교통망과 남산 N서울타워 일몰 전경",
@@ -255,7 +255,7 @@ export const SOLUTION_GUIDES: SolutionGuide[] = [
       en: "Licence, payment and pickup",
       ko: "국제면허증 지참 필수 규정 및 제주 드라이브 팁",
     },
-    image: "https://images.unsplash.com/photo-1570197788417-0e82375c9371?auto=format&fit=crop&w=800&q=80",
+    image: "/images/guides/rental.jpg",
     imageAlt: {
       en: "Scenic coastal road and sky capsule in Korea",
       ko: "한국 해안 도로 드라이브 및 바다 전경",
@@ -310,7 +310,7 @@ export const SOLUTION_GUIDES: SolutionGuide[] = [
       en: "When apps or cards don't work",
       ko: "해외 카드 결제 거부 시 해결 방법 및 키오스크 주문",
     },
-    image: "https://images.unsplash.com/photo-1553163147-622ab57be1c7?auto=format&fit=crop&w=800&q=80",
+    image: "/images/guides/delivery.jpg",
     imageAlt: {
       en: "Korean dining table with delicious dishes",
       ko: "정갈한 한국 전통 음식 상차림",

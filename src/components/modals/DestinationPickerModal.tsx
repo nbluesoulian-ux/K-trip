@@ -6,6 +6,7 @@ import { DESTINATIONS } from "@/data/destinations";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Compass, Sparkles, MapPin, CheckCircle2, RotateCcw, Clock } from "lucide-react";
+import { getAssetPath } from "@/lib/utils";
 
 type DurationType = "short" | "medium" | "long";
 type VibeType = "urban" | "beach" | "nature" | "history";
@@ -184,7 +185,7 @@ export const DestinationPickerModal: React.FC<DestinationPickerModalProps> = ({
           <div className="space-y-4">
             <div className="relative rounded-2xl overflow-hidden aspect-[16/9] shadow-md">
               <img
-                src={rec.image}
+                src={getAssetPath(rec.image)}
                 alt={rec.imageAlt[lang]}
                 className="w-full h-full object-cover"
               />

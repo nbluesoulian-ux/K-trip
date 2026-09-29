@@ -5,7 +5,8 @@ import { Language } from "@/types/trip";
 import { DESTINATIONS } from "@/data/destinations";
 import { Button } from "@/components/ui/button";
 import { Compass, MapPin, ArrowRight } from "lucide-react";
-import { ScrollPopWrapper } from "@/components/illustrations/ScrollPopWrapper";
+import { ScrollPopWrapper } from "@/components/ui/ScrollPopWrapper";
+import { getAssetPath } from "@/lib/utils";
 
 interface FindYourKoreaProps {
   lang: Language;
@@ -87,7 +88,7 @@ export const FindYourKorea: React.FC<FindYourKoreaProps> = ({
               >
                 {/* Background Photo */}
                 <img
-                  src={dest.image}
+                  src={getAssetPath(dest.image)}
                   alt={dest.imageAlt[lang]}
                   className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   loading="lazy"

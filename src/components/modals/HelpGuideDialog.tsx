@@ -6,6 +6,7 @@ import { getGuideBySlug } from "@/data/guides";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { Clock, CheckCircle2, ArrowRight, HeartHandshake, Lightbulb } from "lucide-react";
+import { getAssetPath } from "@/lib/utils";
 
 interface HelpGuideDialogProps {
   slug: HelpTopic | null;
@@ -46,7 +47,7 @@ export const HelpGuideDialog: React.FC<HelpGuideDialogProps> = ({
         {/* Header Image */}
         <div className="relative aspect-[16/8] sm:aspect-[16/7] w-full bg-neutral-900">
           <img
-            src={guide.image}
+            src={getAssetPath(guide.image)}
             alt={guide.imageAlt[lang]}
             className="w-full h-full object-cover"
           />

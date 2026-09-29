@@ -18,7 +18,7 @@ import {
   ChevronDown,
   AlertCircle,
 } from "lucide-react";
-import { ScrollPopWrapper } from "@/components/illustrations/ScrollPopWrapper";
+import { ScrollPopWrapper } from "@/components/ui/ScrollPopWrapper";
 
 export interface HeroProblemSolverRef {
   focusInput: () => void;

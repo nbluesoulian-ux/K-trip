@@ -2,23 +2,23 @@
 
 import React, { useState, useRef } from "react";
 import { Language, HelpTopic } from "@/types/trip";
-import { AmbientCanvas } from "@/components/home/AmbientCanvas";
-import { ScrollProgressRail } from "@/components/home/ScrollProgressRail";
-import { Header } from "@/components/home/Header";
-import { HeroScrollExperience } from "@/components/home/HeroScrollExperience";
-import { HeroProblemSolverRef } from "@/components/home/HeroProblemSolver";
-import { PopularHelpTopics } from "@/components/home/PopularHelpTopics";
-import { TripStageSection } from "@/components/home/TripStageSection";
-import { FindYourKorea } from "@/components/home/FindYourKorea";
-import { HowItWorks } from "@/components/home/HowItWorks";
-import { LocalConcierge } from "@/components/home/LocalConcierge";
-import { FinalCTA } from "@/components/home/FinalCTA";
-import { Footer } from "@/components/home/Footer";
-import { MobileStickyBar } from "@/components/home/MobileStickyBar";
-import { HelpGuideDialog } from "@/components/home/HelpGuideDialog";
-import { ConciergeDialog } from "@/components/home/ConciergeDialog";
-import { VisaQuickCheckDialog } from "@/components/home/VisaQuickCheckDialog";
-import { DestinationPickerModal } from "@/components/home/DestinationPickerModal";
+import { AmbientCanvas } from "@/components/hero/AmbientCanvas";
+import { ScrollProgressRail } from "@/components/layout/ScrollProgressRail";
+import { Header } from "@/components/layout/Header";
+import { HeroScrollExperience } from "@/components/hero/HeroScrollExperience";
+import { HeroProblemSolverRef } from "@/components/hero/HeroProblemSolver";
+import { PopularHelpTopics } from "@/components/sections/PopularHelpTopics";
+import { TripStageSection } from "@/components/sections/TripStageSection";
+import { FindYourKorea } from "@/components/sections/FindYourKorea";
+import { HowItWorks } from "@/components/sections/HowItWorks";
+import { LocalConcierge } from "@/components/sections/LocalConcierge";
+import { FinalCTA } from "@/components/sections/FinalCTA";
+import { Footer } from "@/components/layout/Footer";
+import { MobileStickyBar } from "@/components/layout/MobileStickyBar";
+import { HelpGuideDialog } from "@/components/modals/HelpGuideDialog";
+import { ConciergeDialog } from "@/components/modals/ConciergeDialog";
+import { VisaQuickCheckDialog } from "@/components/modals/VisaQuickCheckDialog";
+import { DestinationPickerModal } from "@/components/modals/DestinationPickerModal";
 import { matchProblemToTopic } from "@/lib/problem-matcher";
 
 export default function Home() {

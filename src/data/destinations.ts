@@ -13,7 +13,7 @@ export const DESTINATIONS: DestinationItem[] = [
       { en: "Nightlife", ko: "심야 명소" },
       { en: "No car needed", ko: "지하철 중심" },
     ],
-    image: "https://images.unsplash.com/photo-1546874177-9e664107314e?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/destinations/seoul.jpg",
     imageAlt: {
       en: "Seoul city twilight skyline and N Seoul Tower",
       ko: "황혼의 서울 도심 야경과 남산타워",
@@ -35,7 +35,7 @@ export const DESTINATIONS: DestinationItem[] = [
       { en: "Seafood", ko: "해산물 미식" },
       { en: "Relaxed pace", ko: "여유로운 템포" },
     ],
-    image: "https://images.unsplash.com/photo-1583037189850-1921ae7c6c22?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/destinations/busan.jpg",
     imageAlt: {
       en: "Busan Haeundae coastal coastline at sunset",
       ko: "부산 해운대 해안가 일몰 풍경",
@@ -57,7 +57,7 @@ export const DESTINATIONS: DestinationItem[] = [
       { en: "Nature", ko: "청정 자연" },
       { en: "Ocean cafes", ko: "감성 카페" },
     ],
-    image: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/destinations/jeju.jpg",
     imageAlt: {
       en: "Jeju emerald volcanic beach and blue waters",
       ko: "제주도의 에메랄드빛 해변과 맑은 바다",
@@ -75,18 +75,18 @@ export const DESTINATIONS: DestinationItem[] = [
       ko: "천년 고도 역사, 평화로운 골목, 고즈넉한 한옥",
     },
     tags: [
-      { en: "Heritage", ko: "유네스코 유산" },
-      { en: "Calm streets", ko: "여유로운 산책" },
-      { en: "Bikes & Hanok", ko: "자전거 & 한옥" },
+      { en: "Heritage", ko: "세계문화유산" },
+      { en: "Quiet walks", ko: "한적한 산책" },
+      { en: "Hanok stay", ko: "전통 한옥" },
     ],
-    image: "https://images.unsplash.com/photo-1548115184-bc6544d06a58?auto=format&fit=crop&w=1000&q=85",
+    image: "/images/destinations/gyeongju.jpg",
     imageAlt: {
-      en: "Historic tile-roof Hanok village with warm afternoon light",
-      ko: "따스한 햇살이 비치는 전통 한옥 기와 마을",
+      en: "Traditional Hanok rooftops and lotus ponds in Gyeongju",
+      ko: "경주의 고즈넉한 한옥 지붕과 연꽃 연못",
     },
     bestFor: {
-      en: "Travelers seeking ancient royal tombs, night pond walks & cozy hanoks",
-      ko: "동궁과 월지 야경, 황리단길 산책, 전통 한옥 숙박을 선호하는 여행자",
+      en: "Travelers seeking ancient tombs, slow strolls & authentic traditional vibe",
+      ko: "불국사, 첨성대, 황리단길의 고즈넉한 정취를 사랑하는 여행자",
     },
   },
 ];

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Language } from "@/types/trip";
 import { Button } from "@/components/ui/button";
 import { Search, ArrowRight, PhoneCall } from "lucide-react";
-import { ScrollPopWrapper } from "@/components/illustrations/ScrollPopWrapper";
+import { ScrollPopWrapper } from "@/components/ui/ScrollPopWrapper";
 
 interface FinalCTAProps {
   lang: Language;

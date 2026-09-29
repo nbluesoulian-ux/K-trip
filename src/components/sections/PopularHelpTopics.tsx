@@ -5,7 +5,7 @@ import { Language, HelpTopic } from "@/types/trip";
 import { SOLUTION_GUIDES } from "@/data/guides";
 import { Clock, ArrowRight, Sparkles, CreditCard, Train, MapPin, Plane, Car, Navigation } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { ScrollPopWrapper } from "@/components/illustrations/ScrollPopWrapper";
+import { ScrollPopWrapper } from "@/components/ui/ScrollPopWrapper";
 
 interface PopularHelpTopicsProps {
   lang: Language;
