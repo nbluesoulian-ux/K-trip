@@ -1,4 +1,4 @@
 :HL["/K-trip/_next/static/chunks/0zc7d3nawm1se.css","style"]
 :HL["/K-trip/_next/static/media/797e433ab948586e-s.p.0r6juujl39pe6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/K-trip/images/guides/rental.jpg","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"help","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"rental-car","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"SV9yCwwQ5U7djqf4xRWJY"}
+0:{"tree":{"name":"","param":null,"prefetchHints":4176,"slots":{"children":{"name":"help","param":null,"prefetchHints":4192,"slots":{"children":{"name":"slug","param":{"type":"d","key":"rental-car","siblings":[]},"prefetchHints":4192,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":4256,"slots":null}}}}}}},"staleTime":300,"buildId":"6nozX0M2ZA-36LOTslAWd"}
