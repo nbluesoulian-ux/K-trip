@@ -6,6 +6,7 @@ import { SOLUTION_GUIDES } from "@/data/guides";
 import { Clock, ArrowRight, Sparkles, CreditCard, Train, MapPin, Plane, Car, Navigation } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScrollPopWrapper } from "@/components/ui/ScrollPopWrapper";
+import { getAssetPath } from "@/lib/utils";
 
 interface PopularHelpTopicsProps {
   lang: Language;
@@ -103,7 +104,7 @@ export const PopularHelpTopics: React.FC<PopularHelpTopicsProps> = ({
                   {/* Card Visual Photo Box with rounded corners */}
                   <div className="relative aspect-[16/10] w-full rounded-2xl overflow-hidden border-2 border-slate-800 mb-5 bg-slate-100">
                     <img
-                      src={guide.image}
+                      src={getAssetPath(guide.image)}
                       alt={guide.imageAlt[lang]}
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                       loading={idx < 3 ? "eager" : "lazy"}
