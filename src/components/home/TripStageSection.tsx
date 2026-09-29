@@ -5,6 +5,7 @@ import { Language, HelpTopic } from "@/types/trip";
 import { Plane, Sparkles, CreditCard, Train } from "lucide-react";
 import { ScrollPopWrapper } from "@/components/illustrations/ScrollPopWrapper";
 import { InteractivePin } from "@/components/illustrations/InteractivePin";
+import { getAssetPath } from "@/lib/utils";
 
 interface TripStageSectionProps {
   lang: Language;
@@ -171,7 +172,7 @@ export const TripStageSection: React.FC<TripStageSectionProps> = ({
                     >
                       <div className="w-16 h-16 rounded-xl overflow-hidden border border-slate-300 shrink-0">
                         <img
-                          src={item.image}
+                          src={getAssetPath(item.image)}
                           alt={item.imageAlt[lang]}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                         />
@@ -253,7 +254,7 @@ export const TripStageSection: React.FC<TripStageSectionProps> = ({
                     >
                       <div className="w-16 h-16 rounded-xl overflow-hidden border border-slate-300 shrink-0">
                         <img
-                          src={item.image}
+                          src={getAssetPath(item.image)}
                           alt={item.imageAlt[lang]}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                         />

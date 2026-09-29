@@ -5,6 +5,7 @@ import { getGuideBySlug, SOLUTION_GUIDES } from "@/data/guides";
 import { HelpTopic } from "@/types/trip";
 import { ArrowLeft, Clock, CheckCircle2, Lightbulb, HeartHandshake } from "lucide-react";
 import { Metadata } from "next";
+import { getAssetPath } from "@/lib/utils";
 
 export async function generateStaticParams() {
   return SOLUTION_GUIDES.map((guide) => ({
@@ -63,7 +64,7 @@ export default async function HelpGuidePage({
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pt-6 sm:pt-8 pb-12">
         <div className="relative rounded-3xl overflow-hidden aspect-[16/9] shadow-xl mb-8 bg-neutral-900">
           <img
-            src={guide.image}
+            src={getAssetPath(guide.image)}
             alt={guide.imageAlt.en}
             className="w-full h-full object-cover"
           />
