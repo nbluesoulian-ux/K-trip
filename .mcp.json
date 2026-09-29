@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "next-devtools": {
+      "command": "cmd.exe",
+      "args": ["/c", "npx", "-y", "next-devtools-mcp@latest"]
+    },
+    "shadcn": {
+      "command": "cmd.exe",
+      "args": ["/c", "npx", "-y", "shadcn@latest", "mcp"]
+    },
+    "yoink": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\blues\\AppData\\Roaming\\npm\\node_modules\\yoink-mcp\\dist\\src\\index.js"
+      ]
+    }
+  }
+}
