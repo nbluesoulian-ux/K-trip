@@ -37,9 +37,17 @@ export default function Home() {
 
   // If page was already scrolled down on load, reveal header
   React.useEffect(() => {
-    if (typeof window !== "undefined" && window.scrollY > 1500) {
-      setIsHeaderVisible(true);
-    }
+    const handleScroll = () => {
+      if (window.scrollY > 1500) {
+        setIsHeaderVisible(true);
+      }
+    };
+    const timer = setTimeout(handleScroll, 100);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const handleToggleLang = () => {

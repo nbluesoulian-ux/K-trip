@@ -63,6 +63,10 @@ export const HeroScrollExperience = forwardRef<HeroProblemSolverRef, HeroScrollE
     const isHeroActiveRef = useRef(false);
     const [isHeroActive, setIsHeroActive] = useState(false);
     const [isReady, setIsReady] = useState(false);
+    const onVideoEndRef = useRef(onVideoEnd);
+    onVideoEndRef.current = onVideoEnd;
+    const langRef = useRef(lang);
+    langRef.current = lang;
 
     const reducedMotion = useSyncExternalStore(
       subscribeReducedMotion,
@@ -153,16 +157,17 @@ export const HeroScrollExperience = forwardRef<HeroProblemSolverRef, HeroScrollE
 
                 // 2. Direct DOM update for phase badge text (zero React re-renders)
                 if (phaseBadgeTextRef.current) {
+                  const currentLang = langRef.current;
                   const badgeText =
                     p < 0.6
-                      ? lang === "en"
+                      ? currentLang === "en"
                         ? "SCENE 01 // PLANNING"
                         : "장면 01 // 여행 계획"
                       : p < 0.88
-                      ? lang === "en"
+                      ? currentLang === "en"
                         ? "SCENE 02 // REALIZATION"
                         : "장면 02 // 발견의 순간"
-                      : lang === "en"
+                      : currentLang === "en"
                       ? "SCENE 03 // RESOLUTION"
                       : "장면 03 // 솔루션";
                   if (phaseBadgeTextRef.current.textContent !== badgeText) {
@@ -176,7 +181,7 @@ export const HeroScrollExperience = forwardRef<HeroProblemSolverRef, HeroScrollE
                   if (!isHeroActiveRef.current) {
                     isHeroActiveRef.current = true;
                     setIsHeroActive(true);
-                    onVideoEnd?.();
+                    onVideoEndRef.current?.();
                   }
                 }
 
